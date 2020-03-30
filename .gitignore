@@ -12,8 +12,9 @@ dist
 
 # Specifics
 
-# Hide compiled CSS
-src/_includes/assets/scripts/*
+# Hide compiled JS
+src/_includes/assets/scripts/*.js
+src/_includes/assets/scripts/*.js.map
 
 # Hide compiled functions
 functions/*.zip
