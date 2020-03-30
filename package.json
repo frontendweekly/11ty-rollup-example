@@ -1,0 +1,50 @@
+{
+  "name": "11ty-rollup-example",
+  "version": "0.0.0",
+  "description": "This is an example for Eleventy to use Rollup",
+  "scripts": {
+    "build": "cross-env ELEVENTY_ENV=production eleventy",
+    "build:clean": "rimraf dist/*",
+    "build:js": "rollup -c -o src/_includes/assets/scripts/bundle.js",
+    "dev": "cross-env ELEVENTY_ENV=development eleventy --serve",
+    "start": "npm run dev"
+  },
+  "keywords": [
+    "eleventy",
+    "rollup"
+  ],
+  "author": "Yuya Saito <hello@studiomohawk.com> (https://github.com/studiomohawk)",
+  "license": "MIT",
+  "devDependencies": {
+    "husky": "^4.2.3",
+    "lint-staged": "^10.0.10",
+    "prettier": "^2.0.2",
+    "stylelint": "^13.2.1",
+    "stylelint-config-prettier": "^8.0.1",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-prettier": "^1.1.2",
+    "stylelint-config-recommended-scss": "^4.2.0",
+    "stylelint-scss": "^3.16.0",
+    "eslint": "^6.8.0",
+    "eslint-config-prettier": "^6.10.1",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.20.2",
+    "eslint-plugin-jest": "^23.8.2",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.1.2",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.1"
+  },
+  "dependencies": {
+    "@11ty/eleventy": "^0.10.0",
+    "date-fns": "^2.11.1",
+    "rimraf": "^3.0.2",
+    "npm-run-all": "^4.1.5",
+    "@rollup/plugin-commonjs": "^11.0.2",
+    "@rollup/plugin-json": "^4.0.2",
+    "@rollup/plugin-node-resolve": "^7.1.1",
+    "rollup": "^2.3.0",
+    "rollup-plugin-terser": "^5.3.0",
+    "cross-env": "^7.0.2"
+  }
+}
